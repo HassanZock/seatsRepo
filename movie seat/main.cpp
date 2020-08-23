@@ -8,7 +8,7 @@ using namespace std;
 
 int main() {
 
-
+	// title things
 	theater imax;
 
 	imax.getRows();
