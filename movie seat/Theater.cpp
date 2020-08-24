@@ -1,6 +1,7 @@
 #include<iostream>
 #include <iomanip>
 #include <vector>
+#include <cstring>
 #include "Theater.h"
 using namespace std;
 
@@ -38,7 +39,6 @@ void theater::EmptySeats() {
 		for (int j = 0; j < colomn ; j++) {
 
 			seats[i][j] = '#';
-
 		}
 	}
 }
@@ -55,10 +55,48 @@ void theater::DisplaySeats() {
 		for (int j = 0; j < colomn ; j++) {
 
 			cout << seats[i][j];
-
 		}
 		cout << endl;
 	}
+}
+
+//*******************************************************************************************
+//     Take a Seat
+//*******************************************************************************************
+void theater::SeatSelect() {
+
+	string chosenSeat;
+	//int inputLength = 1;
+
+	cout << "Please select your seat: ";
+	cin >> chosenSeat;
+	rsize_t inputLength = chosenSeat.length();
+
+cout << "the seat length is " << inputLength << endl;
+	
+
+
+while (inputLength != 2) {
+	cout << "Please select your seat: ";
+	cin >> chosenSeat;
+
+	//cout << "the seat length is " << inputLength << endl;
+
+	inputLength = chosenSeat.length();
+	}
+
+	char seatPosition[3];
+
+	strcpy_s(seatPosition, chosenSeat.c_str());
+	
+	
+	
+	cout << "The first character is: " << seatPosition[0] << endl;
+	cout << "The second character is: " << seatPosition[1] << endl;
+
+	//int ascii = chosenSeat;
+	//cout << "the seat is "<< ascii << endl;
+	
 
 
 }
