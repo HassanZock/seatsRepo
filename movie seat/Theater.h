@@ -1,6 +1,8 @@
 #pragma once
 #ifndef Theater_H
 #define Theater_H
+#include <vector>
+using namespace std;
 
 //Theater class decloration
 
@@ -11,7 +13,7 @@ private:
 	int row;
 	int colomn;
 	char abseats[15][30];
-	
+	vector < vector<char> > seats ;
 	
 
 	
