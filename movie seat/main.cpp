@@ -1,6 +1,7 @@
 
 #include<iostream>
 #include <iomanip>
+#include <vector>
 #include "Theater.h"
 //#include <array>
 using namespace std;

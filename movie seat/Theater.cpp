@@ -1,5 +1,6 @@
 #include<iostream>
 #include <iomanip>
+#include <vector>
 #include "Theater.h"
 using namespace std;
 
@@ -30,9 +31,11 @@ void theater::getColomns() {
 void theater::EmptySeats() {
 
 	//char seats[row][colomn];
+	vector < vector<char> > seats ;
+	seats.resize(row, vector<char>(colomn, 'a'));
 
-	for (int i = 0; i < row; i++) {
-		for (int j = 0; j < colomn; j++) {
+	for (int i = 0; i < row  ; i++) {
+		for (int j = 0; j < colomn ; j++) {
 
 			seats[i][j] = '#';
 
@@ -46,12 +49,12 @@ void theater::EmptySeats() {
 void theater::DisplaySeats() {
 
 	cout << "Row    123456789012345678901234567890" << endl;
-	for (int i = 0; i < row; i++) {
+	for (int i = 0; i < row ; i++) {
 
 		cout << "Row " << setw(2) << i + 1 << " ";
-		for (int j = 0; j < colomn; j++) {
+		for (int j = 0; j < colomn ; j++) {
 
-			cout << seats[i][j];
+			cout << abseats[i][j];
 
 		}
 		cout << endl;

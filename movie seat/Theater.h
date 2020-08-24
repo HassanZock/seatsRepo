@@ -10,7 +10,11 @@ class theater {
 private:
 	int row;
 	int colomn;
-	char seats[15][30];
+	char abseats[15][30];
+	
+	
+
+	
 
 public:
 	void getRows();
