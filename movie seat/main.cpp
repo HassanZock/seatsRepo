@@ -14,11 +14,13 @@ int main() {
 	theater imax;
 
 
+	/*
+	imax.getRows();
+	imax.getColomns();
+	imax.EmptySeats();
+	imax.DisplaySeats();
+	*/
 
-	//imax.getRows();
-	//imax.getColomns();
-	//imax.EmptySeats();
-	//imax.DisplaySeats();
 	imax.SeatSelect();
 	//cout << "the rows value is: " << imax.showRows() << endl;
 	//cout << "the colomns value is: " << imax.showColomns() << endl;
