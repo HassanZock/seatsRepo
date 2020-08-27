@@ -15,7 +15,7 @@ private:
 	int colomn;
 	//char abseats[15][30];
 	vector < vector<char> > seats ;
-	
+	char seatPosition[3];
 
 	
 
@@ -25,6 +25,7 @@ public:
 	void EmptySeats();
 	void DisplaySeats();
 	void SeatSelect();
+	void fillSeat();
 	int showRows();
 	int showColomns();
 };

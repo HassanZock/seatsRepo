@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <vector>
 #include <cstring>
+#include <string>
 #include "Theater.h"
 using namespace std;
 
@@ -31,9 +32,11 @@ void theater::getColomns() {
 
 void theater::EmptySeats() {
 
-	//char seats[row][colomn];
 	
+	// code to resize vector with "row" length for row and "colomn" length for colomn with initial value of 'a'
 	seats.resize(row, vector<char>(colomn, 'a'));
+
+	//seats.resize(row, vector<char>(colomn));
 
 	for (int i = 0; i < row  ; i++) {
 		for (int j = 0; j < colomn ; j++) {
@@ -66,16 +69,16 @@ void theater::DisplaySeats() {
 void theater::SeatSelect() {
 
 	string chosenSeat;
-	char seatPosition[3];
 	int NestedAnswer = 1;
+	int inputLength = 1;
 
-
+	/*
 	cout << "Please select your seat. Answer must be in the form of a number and a letter ";
 	cin >> chosenSeat;
 	rsize_t inputLength = chosenSeat.length();
 
 	cout << "the seat length is " << inputLength << endl;
-	
+	*/
 
 
 
@@ -103,12 +106,37 @@ void theater::SeatSelect() {
 		}
 		else {
 
-			cout << "you the best" << endl;
+			cout << "Thank you for your selection" << endl;
 			NestedAnswer = 0 ;
 		}
 
 	}
-	
+
+}
+//*******************************************************************************************
+//     Fill seat
+//*******************************************************************************************
+
+void theater::fillSeat() {
+
+	//seatPosition[0] = 'A';
+	//seatPosition[1] = '1';
+	char newseat = toupper(seatPosition[1]);
+
+	//cout << int(seatPosition[0]) << endl;
+	//cout << int(newseat) << endl;
+	//cout << int(seatPosition[1]) << endl;
+
+
+	//convert string to array numbers
+	int position1 = (int(seatPosition[0]) - 48);
+	int position2 = (int(newseat) - 64);
+
+	cout << "position 1 is " << position1 << endl;
+	cout << "position 2 is " << position2 << endl;
+
+	seats[position1][position2] = '-';
+
 }
 
 //*******************************************************************************************
