@@ -44,6 +44,8 @@ void theater::EmptySeats() {
 			seats[i][j] = '#';
 		}
 	}
+
+	
 }
 
 //*******************************************************************************************
@@ -51,7 +53,9 @@ void theater::EmptySeats() {
 //*******************************************************************************************
 void theater::DisplaySeats() {
 
-	cout << "Row    123456789012345678901234567890" << endl;
+	
+	//seats[2][3] = '-';
+	cout << "Row    abcdefghijklmnopqrstuvwxyz" << endl;
 	for (int i = 0; i < row ; i++) {
 
 		cout << "Row " << setw(2) << i + 1 << " ";
@@ -119,14 +123,8 @@ void theater::SeatSelect() {
 
 void theater::fillSeat() {
 
-	//seatPosition[0] = 'A';
-	//seatPosition[1] = '1';
+	
 	char newseat = toupper(seatPosition[1]);
-
-	//cout << int(seatPosition[0]) << endl;
-	//cout << int(newseat) << endl;
-	//cout << int(seatPosition[1]) << endl;
-
 
 	//convert string to array numbers
 	int position1 = (int(seatPosition[0]) - 48);
@@ -136,6 +134,7 @@ void theater::fillSeat() {
 	cout << "position 2 is " << position2 << endl;
 
 	seats[position1][position2] = '-';
+	
 
 }
 

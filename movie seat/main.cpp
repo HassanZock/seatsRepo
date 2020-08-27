@@ -27,10 +27,20 @@ int main() {
 
 	imax.SeatSelect();
 
+	imax.fillSeat();
+
+	imax.DisplaySeats();
+
+
+	//second time
+	imax.SeatSelect();
 
 	imax.fillSeat();
 
 	imax.DisplaySeats();
+
+
+
 
 
 	//cout << "the rows value is: " << imax.showRows() << endl;
