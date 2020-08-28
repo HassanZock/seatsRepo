@@ -13,42 +13,36 @@ int main() {
 
 	// title things
 	theater imax;
+	menu UserMenu;
 
 
-	/*
-*/	
+	
+	
 
 	cout << "Hello welcome to theater selection menu" << endl;
 	cout << "What would you like to do?" << endl;
+
+	UserMenu.displayMenu();
 	
 	
 	
 	
-	
+
+
+	/*
 	imax.getRows();
-	
 	imax.getColomns();
-	
 	imax.EmptySeats();
-	
 	imax.DisplaySeats();
-	
-
 	imax.SeatSelect();
-
 	imax.fillSeat();
-
 	imax.DisplaySeats();
-
-
 	//second time
 	imax.SeatSelect();
-
 	imax.fillSeat();
-
 	imax.DisplaySeats();
 
-
+*/
 
 
 

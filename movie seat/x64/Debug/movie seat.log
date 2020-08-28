@@ -1,3 +1,6 @@
-﻿  Theater.cpp
+﻿  main.cpp
+  Menu.cpp
+  Theater.cpp
 C:\Users\Zockh\Desktop\c++\arrays\seat repo\seatsRepo\movie seat\Theater.cpp(97,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
   movie seat.vcxproj -> C:\Users\Zockh\Desktop\c++\arrays\seat repo\seatsRepo\x64\Debug\movie seat.exe
