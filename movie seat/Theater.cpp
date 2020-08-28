@@ -123,18 +123,27 @@ void theater::SeatSelect() {
 
 void theater::fillSeat() {
 
-	
+	//converts all inputs which are lettters to uppercase
 	char newseat = toupper(seatPosition[1]);
 
 	//convert string to array numbers
-	int position1 = (int(seatPosition[0]) - 48);
-	int position2 = (int(newseat) - 64);
+	//the extra -1 is to adjust for displaying at row 1 instead of 0
+	int position1 = ((int(seatPosition[0]) - 48)-1);
+	int position2 = ((int(newseat) - 64)-1);
 
-	cout << "position 1 is " << position1 << endl;
-	cout << "position 2 is " << position2 << endl;
+	//test the positions are displayed correctly
+	////cout << "position 1 is " << (position1 ) << endl;
+	////cout << "position 2 is " << (position2 ) << endl;
 
-	seats[position1][position2] = '-';
-	
+
+	// check if seat is already taken, if not assign seat if it is then ask them to select another seat
+	if (seats[position1][position2] == '#') {
+		
+		seats[position1][position2] = '-';
+	}
+	else {
+		cout << "im sorry this seat is already taken please select another." << endl;
+	}
 
 }
 

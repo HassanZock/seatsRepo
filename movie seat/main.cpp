@@ -4,6 +4,7 @@
 #include <vector>
 #include <cstring>
 #include "Theater.h"
+#include "Menu.h"
 //#include <array>
 using namespace std;
 
@@ -16,6 +17,14 @@ int main() {
 
 	/*
 */	
+
+	cout << "Hello welcome to theater selection menu" << endl;
+	cout << "What would you like to do?" << endl;
+	
+	
+	
+	
+	
 	imax.getRows();
 	
 	imax.getColomns();
