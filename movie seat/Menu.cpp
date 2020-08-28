@@ -11,15 +11,9 @@ using namespace std;
 //*******************************************************************************************
 
 void menu :: displayMenu() {
-
-
 	cout << "1) Purchase a ticket" << endl;
-	cout << "2) See movie options" << endl;
+	cout << "2) See movie options and times" << endl;
 	cout << "3) See thater locations" << endl;
 	cout << "4) Review your orders" << endl;
 	cout << "5) Exit Program" << endl;
-
-
-
-
 }
