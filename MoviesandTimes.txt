@@ -1,0 +1,5 @@
+Name: Tuna Wars         	Time: 8:00pm     Location: Florida, Texas
+Name: Lord of the Tunas 	Time: 7:00pm     Location: Texas
+Name: Mission Tuna      	Time: 6:00pm     Location: Florida, New York
+Name: Avenging Tuna     	Time: 5:00pm     Location: Georgia
+Name: 00Tuna            	Time: 3:00pm     Location: California, Georgia

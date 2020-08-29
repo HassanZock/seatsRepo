@@ -16,11 +16,16 @@ int main() {
 	menu UserMenu;
 
 
+	//variables
+	int userInput;
+
 	
 	
 
 	cout << "Hello welcome to theater selection menu" << endl;
 	cout << "What would you like to do?" << endl;
+
+
 
 	UserMenu.displayMenu();
 	
