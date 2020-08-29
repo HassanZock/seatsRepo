@@ -24,10 +24,20 @@ int main() {
 
 	cout << "Hello welcome to theater selection menu" << endl;
 	cout << "What would you like to do?" << endl;
-
-
-
 	UserMenu.displayMenu();
+
+	// may be better to put this in the display and pass by reference 
+	//the user input back to main
+	// that way the while loop sugested below can be in optiondirector
+	// think (to sleepy now)
+	cout << "Please select a option : ";
+	cin >> userInput;
+	cout << endl;
+	
+	// while loop goes here to evaluate what to do for puchase
+	//another ticket or getting a default
+
+	UserMenu.optionDirector(userInput);
 	
 	
 	

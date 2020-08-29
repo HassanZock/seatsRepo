@@ -1,5 +1,2 @@
 ﻿  Menu.cpp
-  main.cpp
-C:\Users\Zockh\Desktop\c++\arrays\seat repo\seatsRepo\movie seat\main.cpp(25,23): error C2660: 'menu::displayMenu': function does not take 0 arguments
-C:\Users\Zockh\Desktop\c++\arrays\seat repo\seatsRepo\movie seat\Menu.h(21,7): message : see declaration of 'menu::displayMenu'
-  Generating Code...
+  movie seat.vcxproj -> C:\Users\Zockh\Desktop\c++\arrays\seat repo\seatsRepo\x64\Debug\movie seat.exe

@@ -17,14 +17,18 @@ void menu :: displayMenu() {
 	cout << "4) Review your orders" << endl;
 	cout << "5) Purchase another ticket" << endl;
 	cout << "6) Exit Program" << endl;
+	// possible 7 admin to set theater up?
 }
 
 
-void menu::optionTaker(int input) {
+void menu::optionDirector(int input) {
+
+
 
 switch (input)
 	{
 	case 1:
+		cout << "ticket options" << endl;
 		// add a friend to old class
 		break;
 	case 2:
@@ -43,8 +47,10 @@ switch (input)
 		cout << "exit program" << endl;
 		break;
 	default:
-		cout << "you suck" << endl;
+		cout << "you suck try again" << endl;
+		
 	}
+
 }
 
 void menu::displayMovieandTime() {
