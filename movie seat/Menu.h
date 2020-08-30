@@ -18,7 +18,7 @@ private:
 
 
 public:
-	void displayMenu();
+	void displayMenu(int* userInput);
 	void optionDirector(int input);
 	void displayMovieandTime();
 	void displayTheaterLocation();

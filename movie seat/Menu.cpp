@@ -10,7 +10,7 @@ using namespace std;
 //     Display Menu
 //*******************************************************************************************
 
-void menu :: displayMenu() {
+void menu :: displayMenu(int* userInput) {
 	cout << "1) Purchase a ticket" << endl;
 	cout << "2) See movie options and times" << endl;
 	cout << "3) See theater locations" << endl;
@@ -18,6 +18,12 @@ void menu :: displayMenu() {
 	cout << "5) Purchase another ticket" << endl;
 	cout << "6) Exit Program" << endl;
 	// possible 7 admin to set theater up?
+
+	cout << "Please select a option : ";
+	cin >> *userInput;
+	cout << endl;
+
+
 }
 
 
