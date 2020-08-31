@@ -8,7 +8,6 @@ using namespace std;
 
 //Menu class decloration
 
-class Admin;
 
 class Menu {
 
@@ -21,7 +20,7 @@ private:
 
 public:
 	void displayMenu(int* userInput);
-	void optionDirector(int input, Admin &);
+	void optionDirector(int input);
 	void displayMovieandTime();
 	void displayTheaterLocation();
 	

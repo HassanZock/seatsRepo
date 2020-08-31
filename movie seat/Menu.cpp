@@ -30,9 +30,7 @@ void Menu :: displayMenu(int* userInput) {
 //*******************************************************************************************
 //     Direct from menu to functions
 //*******************************************************************************************
-void Menu::optionDirector(int input, Admin &Susy) {
-
-	
+void Menu::optionDirector(int input) {
 
 switch (input)
 	{
@@ -57,7 +55,7 @@ switch (input)
 		break;
 	case 7:
 		cout << "Admin rights:" << endl;
-		Susy.passwordCheck();
+		Admin::passwordCheck();
 		break;
 	default:
 		cout << "you suck try again" << endl;

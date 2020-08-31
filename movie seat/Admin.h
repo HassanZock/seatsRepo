@@ -7,7 +7,6 @@
 
 using namespace std;
 
-//class Menu;
 
 class Admin {
 
@@ -18,9 +17,8 @@ private:
 public:
 
 	
-	void passwordCheck();
-	friend void Menu::optionDirector(int input, Admin &);
-
+	static void passwordCheck();
+	
 
 };
 

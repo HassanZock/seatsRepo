@@ -34,7 +34,7 @@ int main() {
 	UserMenu.displayMenu( &Input);
 }
 	
-	UserMenu.optionDirector(Input, Roly);
+	UserMenu.optionDirector(Input);
 	
 
 	/*
