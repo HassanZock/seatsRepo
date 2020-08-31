@@ -3,12 +3,14 @@
 #define Menu_H
 #include <vector>
 #include <cstring>
+#include "Admin.h"
 using namespace std;
 
 //Menu class decloration
 
+class Admin;
 
-class menu {
+class Menu {
 
 private:
 
@@ -19,11 +21,10 @@ private:
 
 public:
 	void displayMenu(int* userInput);
-	void optionDirector(int input);
+	void optionDirector(int input, Admin &);
 	void displayMovieandTime();
 	void displayTheaterLocation();
-
-
+	
 
 
 };

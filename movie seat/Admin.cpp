@@ -4,14 +4,18 @@
 #include <cstring>
 #include <string>
 #include "Admin.h"
+#include "Menu.h"
 using namespace std;
 
 void Admin :: passwordCheck() {
 
+	
+
 	string UserPassword;
-	string password = "$usysPussyisGr8";
+	string password = "TunaFish";
 	int timeOut = 0;
 
+	
 
 	cout << "Please input the password. "<< endl;
 	cout << "You have 3 chances" << endl;
@@ -32,5 +36,5 @@ void Admin :: passwordCheck() {
 
 	cout << "you may enter" << endl;
 
-
 }
+

@@ -13,15 +13,15 @@ int main() {
 
 	// objects
 	theater imax;
-	menu UserMenu;
-	Admin SusyR;
+	Menu UserMenu;
+	Admin Roly;
 
 
 	//variables
 	int Input;
 
 	
-	SusyR.passwordCheck();
+	//Roly.passwordCheck();
 
 	// Program begins
 
@@ -29,12 +29,12 @@ int main() {
 	cout << "What would you like to do?" << endl;
 	UserMenu.displayMenu(&Input);
 
-	while (Input < 1 || Input > 6) {
+	while (Input < 1 || Input > 7) {
 		cout << "That is not an option" << endl;
 	UserMenu.displayMenu( &Input);
 }
 	
-	UserMenu.optionDirector(Input);
+	UserMenu.optionDirector(Input, Roly);
 	
 
 	/*

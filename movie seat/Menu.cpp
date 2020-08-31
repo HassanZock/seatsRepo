@@ -4,20 +4,21 @@
 #include <cstring>
 #include <string>
 #include "Menu.h"
+#include "Admin.h"
 using namespace std;
 
 //*******************************************************************************************
 //     Display Menu
 //*******************************************************************************************
 
-void menu :: displayMenu(int* userInput) {
+void Menu :: displayMenu(int* userInput) {
 	cout << "1) Purchase a ticket" << endl;
 	cout << "2) See movie options and times" << endl;
 	cout << "3) See theater locations" << endl;
 	cout << "4) Review your orders" << endl;
 	cout << "5) Purchase another ticket" << endl;
 	cout << "6) Exit Program" << endl;
-	// possible 7 admin to set theater up?
+	cout << "7) Admin to set theater up" << endl;
 
 	cout << "Please select a option : ";
 	cin >> *userInput;
@@ -29,9 +30,9 @@ void menu :: displayMenu(int* userInput) {
 //*******************************************************************************************
 //     Direct from menu to functions
 //*******************************************************************************************
-void menu::optionDirector(int input) {
+void Menu::optionDirector(int input, Admin &Susy) {
 
-
+	
 
 switch (input)
 	{
@@ -54,6 +55,10 @@ switch (input)
 	case 6:
 		cout << "exit program" << endl;
 		break;
+	case 7:
+		cout << "Admin rights:" << endl;
+		Susy.passwordCheck();
+		break;
 	default:
 		cout << "you suck try again" << endl;
 		
@@ -61,16 +66,17 @@ switch (input)
 
 }
 
-void menu::displayMovieandTime() {
+void Menu::displayMovieandTime() {
 
 	cout << "display ticket and prices "<< endl;
 
 
 }
 
-void menu::displayTheaterLocation() {
+void Menu::displayTheaterLocation() {
 
 	cout << "display theater locations " << endl;
 
 
 }
+
