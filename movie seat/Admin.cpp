@@ -47,14 +47,13 @@ void Admin::AddMovieData() {
 
 	MovieData Data;
 
-	//open the file
-	fstream info("C:/Users/Zockh/Desktop/c++/arrays/seat repo/seatsRepo/MovieInfo.txt", ios::out | ios::binary);
+	//write to the file
+	fstream info("C:/Users/Zockh/Desktop/c++/arrays/seat repo/seatsRepo/MovieInfo.dat", ios::out | ios::binary);
 
 	cin.ignore();
 
 	do
 	{
-		
 		cin.ignore();
 		cout << "Enter the movie name: ";
 		cin.getline(Data.name, movieNamesize);

@@ -36,6 +36,7 @@ int main() {
 }
 	
 	UserMenu.optionDirector(Input);
+	UserMenu.displayMovieInfo();
 	
 
 	/*

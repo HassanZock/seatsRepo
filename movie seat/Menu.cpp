@@ -15,7 +15,7 @@ using namespace std;
 void Menu :: displayMenu(int* userInput) {
 	cout << "1) Purchase a ticket" << endl;
 	cout << "2) See movie options and times" << endl;
-	cout << "3) See theater locations" << endl;
+	cout << "3) See food options" << endl;
 	cout << "4) Review your orders" << endl;
 	cout << "5) Purchase another ticket" << endl;
 	cout << "6) Exit Program" << endl;
@@ -40,10 +40,10 @@ switch (input)
 		// add a friend to old class
 		break;
 	case 2:
-		displayMovieandTime();
+		displayMovieInfo();
 		break;
 	case 3: 
-		displayTheaterLocation();
+		cout << "theater location" << endl;
 		break;
 	case 4:
 		cout << "order review" << endl;
@@ -65,17 +65,48 @@ switch (input)
 
 }
 
-void Menu::displayMovieandTime() {
+void Menu::displayMovieInfo() {
 
-	cout << "display ticket and prices "<< endl;
+	const int movieNamesize = 31, locationNamesize = 51; // movie and location sizes
+	char again; // add another movie
+
+	// movie structure of data
+	struct MovieData {
+		char name[movieNamesize];
+		int price;
+		char location[locationNamesize];
+	};
+
+	MovieData Data;
+
+	//open the file
+	fstream info;
+	info.open("C:/Users/Zockh/Desktop/c++/arrays/seat repo/seatsRepo/MovieInfo.dat", ios::in | ios::binary);
+
+	if (!info) {
+		cout << "database cant be accessed" << endl;
+		//return 0;
+	}
+
+	cout << "stuff from file" << endl;
+
+	info.read(reinterpret_cast<char*>(&Data), sizeof(Data));
+
+	//cin.ignore();
+
+	while (!info.eof());
+	{
+		cout << "Movie name: ";
+		cout << Data.name << endl;
+		cout << "Price: $";
+		cout << Data.price << endl;
+		cout << "Theater Location: ";
+		cout << Data.location << endl;
+	} 
 
 
-}
-
-void Menu::displayTheaterLocation() {
-
-	cout << "display theater locations " << endl;
-
-
+	cout << "end stuff from file" << endl;
+	//close the file
+	info.close();
 }
 
