@@ -3,6 +3,7 @@
 #include <vector>
 #include <cstring>
 #include <string>
+#include <fstream>
 #include "Menu.h"
 #include "Admin.h"
 using namespace std;
@@ -56,10 +57,10 @@ switch (input)
 	case 7:
 		cout << "Admin rights:" << endl;
 		Admin::passwordCheck();
+		Admin::AddMovieData();
 		break;
 	default:
 		cout << "you suck try again" << endl;
-		
 	}
 
 }

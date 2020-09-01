@@ -1,6 +1,2 @@
 ﻿  Admin.cpp
-  main.cpp
-C:\Users\Zockh\Desktop\c++\arrays\seat repo\seatsRepo\movie seat\main.cpp(17,8): warning C4101: 'Roly': unreferenced local variable
-  Menu.cpp
-  Generating Code...
   movie seat.vcxproj -> C:\Users\Zockh\Desktop\c++\arrays\seat repo\seatsRepo\x64\Debug\movie seat.exe

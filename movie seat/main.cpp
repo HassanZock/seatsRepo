@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <vector>
 #include <cstring>
+#include <fstream>
 #include "Menu.h"
 #include "Theater.h"
 #include "Admin.h"
@@ -14,7 +15,7 @@ int main() {
 	// objects
 	theater imax;
 	Menu UserMenu;
-	Admin Roly;
+	Admin Susy;
 
 
 	//variables

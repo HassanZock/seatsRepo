@@ -3,6 +3,7 @@
 #define Menu_H
 #include <vector>
 #include <cstring>
+#include <fstream>
 #include "Admin.h"
 using namespace std;
 
