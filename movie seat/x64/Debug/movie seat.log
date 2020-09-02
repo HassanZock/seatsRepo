@@ -1,3 +1,5 @@
-﻿  main.cpp
-C:\Users\Zockh\Desktop\c++\arrays\seat repo\seatsRepo\movie seat\main.cpp(18,8): warning C4101: 'Susy': unreferenced local variable
+﻿  Admin.cpp
+  Menu.cpp
+C:\Users\Zockh\Desktop\c++\arrays\seat repo\seatsRepo\movie seat\Menu.cpp(71,7): warning C4101: 'again': unreferenced local variable
+  Generating Code...
   movie seat.vcxproj -> C:\Users\Zockh\Desktop\c++\arrays\seat repo\seatsRepo\x64\Debug\movie seat.exe

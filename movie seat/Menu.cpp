@@ -94,15 +94,18 @@ void Menu::displayMovieInfo() {
 
 	//cin.ignore();
 
-	while (!info.eof());
-	{
+	//while (!info.eof());
+	//{
 		cout << "Movie name: ";
 		cout << Data.name << endl;
 		cout << "Price: $";
 		cout << Data.price << endl;
 		cout << "Theater Location: ";
 		cout << Data.location << endl;
-	} 
+		
+
+
+	//} 
 
 
 	cout << "end stuff from file" << endl;
