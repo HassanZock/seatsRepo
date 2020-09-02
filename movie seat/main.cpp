@@ -25,7 +25,7 @@ int main() {
 	//Roly.passwordCheck();
 
 	// Program begins
-
+	/*
 	cout << "Hello welcome to theater selection menu" << endl;
 	cout << "What would you like to do?" << endl;
 	UserMenu.displayMenu(&Input);
@@ -36,6 +36,8 @@ int main() {
 }
 	
 	UserMenu.optionDirector(Input);
+	*/
+	
 	UserMenu.displayMovieInfo();
 	
 
