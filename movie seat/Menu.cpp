@@ -6,6 +6,8 @@
 #include <fstream>
 #include "Menu.h"
 #include "Admin.h"
+#include "Theater.h"
+#include <stdlib.h> // for exit function
 using namespace std;
 
 //*******************************************************************************************
@@ -32,37 +34,59 @@ void Menu :: displayMenu(int* userInput) {
 //     Direct from menu to functions
 //*******************************************************************************************
 void Menu::optionDirector(int input) {
-
+theater bringIN;
 switch (input)
 	{
 	case 1:
 		cout << "ticket options" << endl;
-		// add a friend to old class
+		bringIN.DisplaySeats();
+		bringIN.SeatSelect();
+		//optionDirector(input);
 		break;
-	case 2:
+	
+	case 2://
 		displayMovieInfo();
 		break;
-	case 3: 
-		cout << "theater location" << endl;
+	
+	case 3: // kinda
+		cout << "Food Choices" << endl;
+		cout << "Popcorn" << endl;
+		cout << "Soda" << endl;
+		cout << "Slushi" << endl;
+		cout << "Candy" << endl;
+		cout << "Nachos" << endl;
 		break;
+	
 	case 4:
 		cout << "order review" << endl;
 		break;
-	case 5:
+	
+	case 5://
 		cout << "purchase another ticket" << endl;
+		bringIN.DisplaySeats();
+		bringIN.SeatSelect();
 		break;
-	case 6:
+	
+	case 6://
 		cout << "exit program" << endl;
+		exit(EXIT_FAILURE);
 		break;
-	case 7:
+	
+	case 7://
 		cout << "Admin rights:" << endl;
 		Admin::passwordCheck();
 		Admin::AddMovieData();
+		cout << "you can now set up theater data" << endl;
+		bringIN.getColomns();
+		bringIN.getRows();
+		bringIN.EmptySeats();
+		//displayMenu(&userInput);
+		//optionDirector(input);
 		break;
+	
 	default:
 		cout << "you suck try again" << endl;
 	}
-
 }
 
 void Menu::displayMovieInfo() {

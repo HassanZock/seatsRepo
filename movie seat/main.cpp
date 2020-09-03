@@ -6,6 +6,7 @@
 #include "Menu.h"
 #include "Theater.h"
 #include "Admin.h"
+#include <stdlib.h>
 //#include <array>
 using namespace std;
 
@@ -20,12 +21,10 @@ int main() {
 
 	//variables
 	int Input;
-
-	
-	//Roly.passwordCheck();
+	int looper = 1;
 
 	// Program begins
-	/*
+	/**/
 	cout << "Hello welcome to theater selection menu" << endl;
 	cout << "What would you like to do?" << endl;
 	UserMenu.displayMenu(&Input);
@@ -36,9 +35,19 @@ int main() {
 }
 	
 	UserMenu.optionDirector(Input);
-	*/
 	
-	UserMenu.displayMovieInfo();
+	while (looper == 1) {
+
+	UserMenu.displayMenu(&Input);
+	UserMenu.optionDirector(Input);
+
+	}
+	
+
+
+
+
+	//UserMenu.displayMovieInfo();
 	
 
 	/*

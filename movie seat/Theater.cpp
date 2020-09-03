@@ -83,9 +83,6 @@ void theater::SeatSelect() {
 
 	cout << "the seat length is " << inputLength << endl;
 	*/
-
-
-
 	while (NestedAnswer == 1) {
 
 		while (inputLength != 2) {
