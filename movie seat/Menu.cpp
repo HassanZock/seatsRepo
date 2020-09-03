@@ -95,7 +95,7 @@ void Menu::displayMovieInfo() {
 	//cin.ignore();
 
 
-	
+	//while(getline(info,Data))
 	while (!info.eof())
 	{
 		cout << "Movie name: ";
@@ -106,6 +106,8 @@ void Menu::displayMovieInfo() {
 		cout << Data.location << endl;
 
 		cout << "stop it" << endl;
+
+		info.read(reinterpret_cast<char*>(&Data), sizeof(Data));
 
 	 } 
 
