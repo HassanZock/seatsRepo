@@ -26,8 +26,6 @@ void Menu :: displayMenu(int* userInput) {
 	cout << "Please select a option : ";
 	cin >> *userInput;
 	cout << endl;
-
-
 }
 
 //*******************************************************************************************
@@ -49,12 +47,12 @@ switch (input)
 		break;
 	
 	case 3: // kinda
-		cout << "Food Choices" << endl;
-		cout << "Popcorn" << endl;
-		cout << "Soda" << endl;
-		cout << "Slushi" << endl;
-		cout << "Candy" << endl;
-		cout << "Nachos" << endl;
+		cout << "Food Choices:" << endl;
+		cout << "1) Popcorn" << endl;
+		cout << "2) Soda" << endl;
+		cout << "3) Slushi" << endl;
+		cout << "4) Candy" << endl;
+		cout << "5) Nachos" << endl;
 		break;
 	
 	case 4:
