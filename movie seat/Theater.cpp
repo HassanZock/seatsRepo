@@ -11,8 +11,10 @@ using namespace std;
 //     Set Row
 //*******************************************************************************************
 void theater::getRows() {
+	//int row;
 	cout << "How many rows does the theater have? ";
 	cin >> row;
+	
 }
 
 
@@ -21,8 +23,10 @@ void theater::getRows() {
 //*******************************************************************************************
 
 void theater::getColomns() {
+	//int colomn;
 	cout << "How many colomns does the theater have? ";
 	cin >> colomn;
+	
 }
 
 

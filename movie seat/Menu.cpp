@@ -10,6 +10,13 @@
 #include <stdlib.h> // for exit function
 using namespace std;
 
+int theater::row;
+int theater::colomn;
+char theater::seatPosition[3];
+vector < vector<char> >theater::seats;
+
+//vector theater::seats;
+
 //*******************************************************************************************
 //     Display Menu
 //*******************************************************************************************
@@ -37,6 +44,14 @@ switch (input)
 	{
 	case 1:
 		cout << "ticket options" << endl;
+
+		//not here
+		cout << "row" << bringIN.showRows() << endl;
+		cout << "colomn" << bringIN.showColomns() << endl; 
+		//cout << "row.row" << bringIN.row << endl;
+		//cout << "colomn.colmn" << bringIN.colomn << endl;
+
+
 		bringIN.DisplaySeats();
 		bringIN.SeatSelect();
 		//optionDirector(input);
@@ -78,13 +93,18 @@ switch (input)
 		bringIN.getColomns();
 		bringIN.getRows();
 		bringIN.EmptySeats();
-		//displayMenu(&userInput);
-		//optionDirector(input);
+
+		//has it here
+		cout << "row" << bringIN.showRows() << endl;
+		cout << "colomn" << bringIN.showColomns() << endl;
+		//cout << "row.row" << bringIN.row << endl;
+		//cout << "colomn.colmn" << bringIN.colomn << endl;
+		
 		break;
 	
 	default:
 		cout << "you suck try again" << endl;
-	}
+	}//
 }
 
 void Menu::displayMovieInfo() {
@@ -139,3 +159,4 @@ void Menu::displayMovieInfo() {
 	info.close();
 }
 
+// credit karma

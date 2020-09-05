@@ -1,6 +1,9 @@
 ﻿  Menu.cpp
-C:\Users\Zockh\Desktop\c++\arrays\seat repo\seatsRepo\movie seat\Menu.cpp(95,7): warning C4101: 'again': unreferenced local variable
+C:\Users\Zockh\Desktop\c++\arrays\seat repo\seatsRepo\movie seat\Menu.cpp(113,7): warning C4101: 'again': unreferenced local variable
+  Theater.cpp
+C:\Users\Zockh\Desktop\c++\arrays\seat repo\seatsRepo\movie seat\Theater.cpp(98,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   main.cpp
+C:\Users\Zockh\Desktop\c++\arrays\seat repo\seatsRepo\movie seat\main.cpp(17,10): warning C4101: 'imax': unreferenced local variable
 C:\Users\Zockh\Desktop\c++\arrays\seat repo\seatsRepo\movie seat\main.cpp(19,8): warning C4101: 'Susy': unreferenced local variable
   Generating Code...
   movie seat.vcxproj -> C:\Users\Zockh\Desktop\c++\arrays\seat repo\seatsRepo\x64\Debug\movie seat.exe

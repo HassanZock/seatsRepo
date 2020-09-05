@@ -11,17 +11,21 @@ using namespace std;
 class theater {
 
 private:
-	int row;
-	int colomn;
+	
+	
 	//char abseats[15][30];
-	vector < vector<char> > seats ;
-	char seatPosition[3];
-
+	
+	static char seatPosition[3];
+	static int row;
+	static int colomn ;
+	static vector < vector<char> > seats ;
 	
 
+
 public:
+
 	void getRows();
-	void getColomns();
+	void getColomns(); 
 	void EmptySeats();
 	void DisplaySeats();
 	void SeatSelect();
