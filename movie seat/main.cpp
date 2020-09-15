@@ -43,10 +43,6 @@ int main() {
 
 	}
 	
-
-
-
-
 	//UserMenu.displayMovieInfo();
 	
 
