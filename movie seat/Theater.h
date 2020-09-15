@@ -18,7 +18,7 @@ private:
 	static char seatPosition[3];
 	static int row;
 	static int colomn ;
-	static vector < vector<char> > seats ;
+	static vector<vector<char>> seats ;
 	
 
 

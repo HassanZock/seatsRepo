@@ -13,7 +13,7 @@ using namespace std;
 int theater::row;
 int theater::colomn;
 char theater::seatPosition[3];
-vector < vector<char> >theater::seats;
+vector <vector<char>> theater::seats;
 
 //vector theater::seats;
 
@@ -48,13 +48,11 @@ switch (input)
 		//not here
 		cout << "row" << bringIN.showRows() << endl;
 		cout << "colomn" << bringIN.showColomns() << endl; 
-		//cout << "row.row" << bringIN.row << endl;
-		//cout << "colomn.colmn" << bringIN.colomn << endl;
-
-
+		
 		bringIN.DisplaySeats();
 		bringIN.SeatSelect();
-		//optionDirector(input);
+		bringIN.fillSeat();
+		bringIN.DisplaySeats();
 		break;
 	
 	case 2://
@@ -97,9 +95,6 @@ switch (input)
 		//has it here
 		cout << "row" << bringIN.showRows() << endl;
 		cout << "colomn" << bringIN.showColomns() << endl;
-		//cout << "row.row" << bringIN.row << endl;
-		//cout << "colomn.colmn" << bringIN.colomn << endl;
-		
 		break;
 	
 	default:
