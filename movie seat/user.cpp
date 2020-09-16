@@ -25,3 +25,11 @@ void user::setUsername() {
 	cout << "Your username has been set" << endl;
 
 }
+
+void user::setEmail()  {
+
+}
+
+void user::greeting() {
+	cout << "Hello user" << endl;
+}

@@ -16,12 +16,14 @@ private:
 protected:
 	string userPassword;
 	string userName;
+	string userEmail;
 
 public:
 	void setPassword();
 	void setUsername();
-
-
+	virtual void greeting();
+	//pure virtual function
+	virtual void setEmail() = 0;
 };
 
 #endif
