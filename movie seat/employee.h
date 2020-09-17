@@ -16,12 +16,14 @@ class employee : public user
 
 private:
 
-	void setworkHours();
-	void setPosition();
-
+	string schedual, position, email;
+	
 
 
 public:
+
+	void setworkHours();
+	void setPosition();
 	void setEmail() override;
 
 

@@ -6,6 +6,7 @@
 #include "Menu.h"
 #include "Theater.h"
 #include "Admin.h"
+#include "customer.h"
 #include <stdlib.h>
 //#include <array>
 using namespace std;
@@ -14,17 +15,26 @@ using namespace std;
 int main() {
 
 	// objects
-	theater imax;
-	Menu UserMenu;
-	Admin Susy;
+	//theater imax;
+	//Menu UserMenu;
+	//Admin Susy;
 
 
 	//variables
-	int Input;
-	int looper = 1;
+	//int Input;
+	//int looper = 1;
+
+
+
+	customer tunaface;
+
+	tunaface.SetGenre();
+
+
+
 
 	// Program begins
-	/**/
+	/* GOOD
 	cout << "Hello welcome to theater selection menu" << endl;
 	cout << "What would you like to do?" << endl;
 	UserMenu.displayMenu(&Input);
@@ -42,7 +52,7 @@ int main() {
 	UserMenu.optionDirector(Input);
 
 	}
-	
+	*/ //GOOD
 	//UserMenu.displayMovieInfo();
 	
 

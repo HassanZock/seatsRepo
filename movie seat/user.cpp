@@ -12,7 +12,7 @@ void user::setPassword() {
 
 	cout << "Please select a password" << endl;
 	cout << "Password: ";
-	getline(cin, userPassword);
+	//getline(cin, userPassword);
 	cout << "Your password has been set" << endl;
 	
 }
@@ -21,7 +21,7 @@ void user::setUsername() {
 
 	cout << "Please select a username" << endl;
 	cout << "Username: ";
-	getline(cin, userName);
+	//getline(cin, userName);
 	cout << "Your username has been set" << endl;
 
 }

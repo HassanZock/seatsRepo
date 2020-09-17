@@ -14,9 +14,9 @@ class user {
 private:
 
 protected:
-	string userPassword;
-	string userName;
-	string userEmail;
+	//string userPassword;
+	//string userName;
+	//string userEmail;
 
 public:
 	void setPassword();
