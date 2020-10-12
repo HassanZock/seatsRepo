@@ -1,29 +1,40 @@
 #pragma once
 #ifndef user_H
 #define user_H
+#include <iostream>
+#include <iomanip>
 #include <vector>
 #include <cstring>
+#include <string>
 #include <fstream>
-#include <cstring>
 #include <string>
 #include <stdio.h>
+#include <stdlib.h>
+
 
 
 class user {
 
 private:
 
+std::string userName;
+
 protected:
 	//string userPassword;
-	//string userName;
+	
 	//string userEmail;
 
 public:
+
+	//string userName;
+	
 	void setPassword();
 	void setUsername();
-	virtual void greeting();
+	
+
 	//pure virtual function
-	virtual void setEmail() = 0;
+	virtual void setEmail();
+	virtual void greeting();
 };
 
 #endif

@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 #include <iomanip>
 #include <vector>
@@ -32,6 +33,7 @@ void employee::setEmail()  {
 	getline(cin, email);
 }
 
-//void user::greeting() {
-	//cout << "Hello welcome to your work portal" << endl;
-//}
+void user::greeting() {
+	cout << "Hello welcome to your work portal" << endl;
+}
+*/

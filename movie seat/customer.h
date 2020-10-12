@@ -18,6 +18,7 @@ private:
 
 	string customerEmail;
 	string CustomerGenre;
+	
 	//string test = tuna;
 
 
@@ -26,7 +27,7 @@ public:
 
 	void setEmail();
 	void SetGenre();
-	//void setEmail() override;
+	//virtual void setEmail() override;
 	//void greeting() override;
 
 

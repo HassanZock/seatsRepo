@@ -6,7 +6,10 @@
 #include "Menu.h"
 #include "Theater.h"
 #include "Admin.h"
+
+#include "user.h"
 #include "customer.h"
+
 #include <stdlib.h>
 //#include <array>
 using namespace std;
@@ -27,8 +30,15 @@ int main() {
 
 
 	customer tunaface;
+	//user* tunauser = new customer;
+	user* tunauser = &tunaface;
 
-	tunaface.SetGenre();
+	//tunaface.SetGenre();
+	//tunauser->setEmail();
+	tunauser->setUsername();
+
+	//user tuna;
+	//tuna.setUsername();
 
 
 

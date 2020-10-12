@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 #include <iomanip>
 #include <vector>
 #include <cstring>
@@ -7,8 +7,9 @@
 #include "Menu.h"
 #include "Admin.h"
 #include "Theater.h"
-#include "customer.h"
 #include "user.h"
+#include "customer.h"
+
 #include <stdlib.h> // for exit function
 using namespace std;
 	
@@ -58,8 +59,8 @@ void customer::SetGenre() {
 
 
 void customer::setEmail() {
-	cout << "what is your email?" << endl;
-	cout << "work email: ";
+	cout << "what is your customer email?" << endl;
+	cout << "customer email: ";
 	getline(cin, customerEmail);
 }
 

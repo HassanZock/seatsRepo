@@ -1,3 +1,4 @@
+/*
 #pragma once
 #ifndef employee_H
 #define employee_H
@@ -24,11 +25,12 @@ public:
 
 	void setworkHours();
 	void setPosition();
-	void setEmail() override;
-
+	virtual void setEmail() override;
+	virtual void greeting() override;
 
 
 
 };
 
 #endif
+*/
